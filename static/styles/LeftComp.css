@@ -1,0 +1,89 @@
+/* Secrch Form */
+.mainLeft form {
+  width: 100%;
+
+  font-size: 30px;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.mainLeft form input {
+  width: 80%;
+  height: auto;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+  transition: all .3s;
+}
+
+.mainLeft form input:focus {
+  border: 1px solid coral;
+}
+
+.mainLeft form button {
+  background-color: coral;
+  color: whitesmoke;
+
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+
+  transition: all .3s;
+}
+
+.mainLeft form button:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+/* Shortcut Box */
+.mainLeft .shortcut {
+  width: 80%;
+  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: whitesmoke;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  text-align: center;
+  justify-content: center;
+}
+
+.mainLeft .shortcut .sBox {
+  width: auto;
+}
+
+.mainLeft .shortcut .sBox a {
+  color: #2e2f2f;
+  transition: all .3s;
+}
+
+.mainLeft .shortcut .sBox a:hover {
+  text-decoration: none;
+}
+
+.mainLeft .shortcut .sBox img {
+  width: 100px;
+  height: 100px;
+  transition: all .3s;
+}
+
+.mainLeft .shortcut .sBox img:hover {
+  transform: scale(1.2);
+}

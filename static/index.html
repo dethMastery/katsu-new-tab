@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>katsu's new tab</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/LeftComp.css">
+    <link rel="stylesheet" href="./styles/RightComp.css">
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="mainLeft">
+        <form action="/" method="GET">
+          <input type="text" name="q" placeholder="Search with Google">
+          &nbsp;&nbsp;
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="shortcut">
+          <div class="sBox">
+            <a href="https://github.com">
+              <img src="" alt="github"><br>
+              <span>
+                Github
+              </span>
+            </a>
+          </div>
+
+          <div class="sBox">
+            <a href="https://fb.com">
+              <img src="" alt="facebook"><br>
+              <span>
+                Facebook
+              </span>
+            </a>
+          </div>
+
+          <div class="sBox">
+            <a href="https://messenger.com">
+              <img src="" alt="messenger"><br>
+              <span>
+                Messenger
+              </span>
+            </a>
+          </div>
+
+          <div class="sBox">
+            <a href="https://twitter.com">
+              <img src="" alt="twitter"><br>
+              <span>
+                Twitter
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainRight">
+        <h1 id="clock"></h1>
+
+        <div id="katsuBlog">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/rss-parser@3.12.0/dist/rss-parser.min.js"></script>
+    <script src="./scripts/RSSFetch.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/clock.js"></script>
+  </body>
+</html>
