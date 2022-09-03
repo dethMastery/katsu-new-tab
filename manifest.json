@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "katsu's tabs extension",
+  "version": "1.0",
+  "description": "just used to make your new tab page more weebs",
+  "author": "dethz",
+  "chrome_url_overrides" : {
+    "newtab": "static/index.html"
+  },
+  "permissions": [
+    "storage",
+    "https://katsuragi.detzz.in.th/api",
+    "https://blog.suphakit.net/atom.xml"
+  ],
+  "icons": {
+    "16": "icon/icon16.png",
+    "128": "icon/icon128.png"
+  }
+}
