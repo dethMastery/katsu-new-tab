@@ -70,3 +70,9 @@ parser.parseURL('https://katsuragi.detzz.in.th/api/rss/index.php', function(err,
   link_container.appendChild(see_more)
   content.appendChild(link_container)
 })
+
+parser.parseURL('https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml', function(err, feed) {
+  if (err) throw err
+
+  console.log(feed.title)
+})
