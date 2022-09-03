@@ -12,13 +12,16 @@
   </head>
   <body>
     <div class="overlay">
+      <!-- Main Left Part -->
       <div class="mainLeft">
+        <!-- Searching Bar -->
         <form action="/" method="GET">
           <input type="text" name="q" placeholder="Search with Google">
           &nbsp;&nbsp;
           <button type="submit">Search</button>
         </form>
 
+        <!-- Shortcut Bar -->
         <div class="shortcut">
           <div class="sBox">
             <a href="https://github.com">
@@ -59,15 +62,18 @@
       </div>
 
       <div class="mainRight">
+        <!-- Yep this is just a clock -->
         <h1 id="clock"></h1>
 
-        <div id="katsuBlog">
-
-        </div>
+        <!-- This is just a blog content container :D -->
+        <div id="katsuBlog"></div>
       </div>
     </div>
 
+    <!-- CDN Script -->
     <script src="https://cdn.jsdelivr.net/npm/rss-parser@3.12.0/dist/rss-parser.min.js"></script>
+
+    <!-- Self Script -->
     <script src="./scripts/RSSFetch.js"></script>
     <script src="./scripts/search.js"></script>
     <script src="./scripts/clock.js"></script>
