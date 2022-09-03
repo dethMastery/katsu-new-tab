@@ -11,6 +11,8 @@
   width: auto;
 
   padding: 1rem;
+  padding-right: 0;
+  margin-bottom: 1rem;
 
   color: #2e2f2f;
   background-color: whitesmoke;
@@ -21,27 +23,32 @@
 }
 
 #katsuBlog h2 {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 #katsuBlog ul {
   width: auto;
 
   padding: 0;
-  padding-left: 1rem;
   margin: 0;
 
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 #katsuBlog ul li {
-  margin-bottom: .5rem;
   text-align: left;
+  padding: .5rem;
+  padding-right: 0;
+}
+
+#katsuBlog ul li:nth-child(odd) {
+  background-color: #cfcece;
 }
 
 #katsuBlog ul a {
   color: #2e2f2f;
+  padding: .5rem;
   transition: all .3s;
 }
 
@@ -50,7 +57,8 @@
 }
 
 #katsuBlog .linkContainer {
-  width: 100%;
+  width: auto;
+  padding-right: 1rem;
   text-align: right;
 }
 
@@ -58,10 +66,75 @@
   color: #2e2f2f;
   text-decoration: underline;
   transition: all .3s;
-
 }
 
 #katsuBlog .seeMore:hover {
+  color: #2e2f2f;
+  text-decoration: none;
+}
+
+/* katsu New Released */
+#katsu-wav {
+  width: auto;
+
+  padding: 1rem;
+  padding-right: 0;
+
+  color: #2e2f2f;
+  background-color: whitesmoke;
+  text-align: center;
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#katsu-wav h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#katsu-wav ul {
+  width: auto;
+
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+}
+
+#katsu-wav ul li {
+  text-align: left;
+  padding: .5rem;
+  padding-right: 0;
+}
+
+#katsu-wav ul li:nth-child(odd) {
+  background-color: #cfcece;
+}
+
+#katsu-wav ul a {
+  color: #2e2f2f;
+  padding: .5rem;
+  transition: all .3s;
+}
+
+#katsu-wav ul a:hover {
+  text-decoration: none;
+}
+
+#katsu-wav .linkContainer {
+  width: auto;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+#katsu-wav .seeMore {
+  color: #2e2f2f;
+  text-decoration: underline;
+  transition: all .3s;
+}
+
+#katsu-wav .seeMore:hover {
   color: #2e2f2f;
   text-decoration: none;
 }
