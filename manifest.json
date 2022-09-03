@@ -9,11 +9,13 @@
   },
   "permissions": [
     "storage",
-    "https://katsuragi.detzz.in.th/api",
-    "https://blog.suphakit.net/atom.xml"
+    "https://katsuragi.detzz.in.th/api/rss",
+    "https://blog.suphakit.net/atom.xml",
+    "https://cdn.jsdelivr.net/npm/rss-parser@3.12.0/dist/rss-parser.min.js"
   ],
   "icons": {
     "16": "icon/icon16.png",
     "128": "icon/icon128.png"
-  }
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
 }
