@@ -1,6 +1,67 @@
+/* Clock Part */
 .mainRight h1#clock {
   width: 100%;
 
   text-align: center;
   color: whitesmoke;
+}
+
+/* Blog Updated Part */
+#katsuBlog {
+  width: auto;
+
+  padding: 1rem;
+
+  color: #2e2f2f;
+  background-color: whitesmoke;
+  text-align: center;
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#katsuBlog h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#katsuBlog ul {
+  width: auto;
+
+  padding: 0;
+  padding-left: 1rem;
+  margin: 0;
+
+  list-style-type: circle;
+}
+
+#katsuBlog ul li {
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+#katsuBlog ul a {
+  color: #2e2f2f;
+  transition: all .3s;
+}
+
+#katsuBlog ul a:hover {
+  text-decoration: none;
+}
+
+#katsuBlog .linkContainer {
+  width: 100%;
+  text-align: right;
+}
+
+#katsuBlog .seeMore {
+  color: #2e2f2f;
+  text-decoration: underline;
+  transition: all .3s;
+
+}
+
+#katsuBlog .seeMore:hover {
+  color: #2e2f2f;
+  text-decoration: none;
 }

@@ -81,6 +81,9 @@
 .mainLeft .shortcut .sBox img {
   width: 100px;
   height: 100px;
+  background-color: #444;
+  border-radius: 1rem;
+  padding: 1rem;
   transition: all .3s;
 }
 
