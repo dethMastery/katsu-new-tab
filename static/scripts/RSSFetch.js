@@ -1,4 +1,11 @@
-let parser = new RSSParser()
+let parser = new RSSParser({
+  customFields: {
+    item: [
+      ['media:content', 'mediaContent'],
+      ['dc:creator', 'aAuthor'],
+    ]
+  }
+})
 
 parser.parseURL('https://blog.suphakit.net/atom.xml', function (err, feed) {
   if (err) throw err
@@ -75,4 +82,43 @@ parser.parseURL('https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml', f
   if (err) throw err
 
   console.log(feed.title)
+
+  let news = document.querySelector('#news')
+
+  let container = document.createElement('div')
+
+  container.setAttribute('class', 'container')
+
+  news.appendChild(container)
+
+  for(let i=0; i<3; i++) {
+    let card = document.createElement('div')
+
+    let imgContain = document.createElement('div')
+    let img = document.createElement('img')
+
+    let dataContain = document.createElement('div')
+    let indexTitle = document.createElement('h2')
+    let desp = document.createElement('span')
+
+    let linkContainer = document.createElement('div')
+    let readmore = document.createElement('a')
+    
+    imgContain.setAttribute('class', 'imgContainer')
+    dataContain.setAttribute('class', 'textContainer')
+
+    card.setAttribute('class', 'newsCard')
+    img.setAttribute('src', feed.items[i].mediaContent.$.url)
+    indexTitle.innerText = feed.items[i].title
+    desp.setAttribute('class', 'detail')
+    desp.innerText = feed.items[i].description + ' - ' + feed.items[i].aAuthor
+
+    imgContain.appendChild(img)
+    dataContain.appendChild(indexTitle)
+    dataContain.appendChild(desp)
+    
+    card.appendChild(imgContain)
+    card.appendChild(dataContain)
+    container.appendChild(card)
+  }
 })
